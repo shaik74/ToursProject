@@ -1,0 +1,118 @@
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --transition: all 0.35 linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0.5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0.5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+.btn{
+  background-color:black;
+  display:inline-block;
+  padding:0.5rem 1rem;
+  border-radius:var(--radius);
+  text-transform:capitalize;
+  color:white;
+  letter-spacing:var(--spacing);
+  border-color:transparent;
+  cursor:pointer;
+  margin-top: 2rem;
+  font-size:1.2rem;
+}
+
+main{
+  width:90vw;
+  max-width:var(--max-width);
+  margin:5rem auto;
+}
+.loading{
+  text-align:center;
+
+}
+.title{
+  text-align:center;
+  margin-bottom:2rem;
+}
+.single-tour{
+  background-color:white;
+  border-radius:8px;
+  margin:2rem auto;
+  box-shadow: var(--light-shadow);
+  padding:1rem;
+}
+
+
+.btn-delete{
+  display:block;
+  width:15rem;
+  margin:1rem auto;
+  color:red;
+  background :transparent;
+  border:1px solid red;
+  padding:0.5rem 1rem;
+  border-radius:8px;
+  text-transform:uppercase;
+  font-size:1.2rem;
+  cursor:pointer;
+}
+
